@@ -1,0 +1,41 @@
+Change Footprint: Footprint Not Found 2843923
+Added Component: Designator=J1(1727010)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1727010/phoenix-contact?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-2/sf-00050638.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1727010?qs=JcjeNNoqGSMjtHhQoBJ7UA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J2(1727010)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1727010/phoenix-contact?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-2/sf-00050638.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1727010?qs=JcjeNNoqGSMjtHhQoBJ7UA%3D%3D"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 2843923
+Add Component: Footprint Not Found 2843923
+Add Component: Footprint Not Found 2843923
+Added Pin To Net: NetName=+5 Pin=J1-1
+Added Pin To Net: NetName=PC0_P_Sense01 Pin=J1-2
+Added Pin To Net: NetName=+5 Pin=J2-1
+Added Pin To Net: NetName=PC1_P_Sense02 Pin=J2-2
+Add Pin To Net: Unknown Pin: Pin J3-1
+Add Pin To Net: Unknown Pin: Pin J3-2
+Add Pin To Net: Unknown Pin: Pin J3-3
+Add Pin To Net: Unknown Pin: Pin J4-1
+Add Pin To Net: Unknown Pin: Pin J4-2
+Add Pin To Net: Unknown Pin: Pin J4-3
+Add Pin To Net: Unknown Pin: Pin J5-3
+Add Pin To Net: Unknown Pin: Pin J6-1
+Add Pin To Net: Unknown Pin: Pin J6-2
+Add Pin To Net: Unknown Pin: Pin J6-3
+Added Member To Class: ClassName=Sheet1 Member=Component J1 1727010
+Added Member To Class: ClassName=Sheet1 Member=Component J2 1727010
+Add Class Member: Failed to add class member : Component J3 284392-3
+Add Class Member: Failed to add class member : Component J4 284392-3
+Add Class Member: Failed to add class member : Component J6 284392-3

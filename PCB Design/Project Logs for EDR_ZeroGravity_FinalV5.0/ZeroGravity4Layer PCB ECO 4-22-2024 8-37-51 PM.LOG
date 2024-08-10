@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=PB5_PDSCK_HX Pin=U1-26
+Removed Pin From Net: NetName=PB4_DOUT_HX Pin=U1-27
+Added Pin To Net: NetName=+5 Pin=P1-2
+Added Pin To Net: NetName=MOSI Pin=P1-4
+Added Pin To Net: NetName=GND Pin=P1-6
+Added Pin To Net: NetName=PB4_DOUT_HX Pin=U1-30
+Added Pin To Net: NetName=PB5_PDSCK_HX Pin=U1-31

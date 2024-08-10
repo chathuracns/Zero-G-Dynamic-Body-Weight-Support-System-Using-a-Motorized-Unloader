@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ZeroGravity4Layer.PcbDoc   4/23/2024  2:14:17 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ZeroGravity4Layer.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      8mil (0.201mm)                                            Round             26        PTH        4.88inch (124.04mm)
+T2      35mil (0.889mm)                                           Round             3         PTH        0.16inch (4.00mm)
+T3      40mil (1.021mm)                                           Round             6         PTH        0.50inch (12.70mm)
+T4      43mil (1.1mm)                                             Round             20        PTH        5.52inch (140.21mm)
+T5      122mil (3.099mm)                                          Round             4         PTH        5.66inch (143.76mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              59
+
+Total Processing Time (hh:mm:ss) : 00:00:00

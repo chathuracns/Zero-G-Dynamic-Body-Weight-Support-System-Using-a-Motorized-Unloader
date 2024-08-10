@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=PC0_P_Sense03 Pin=J2-1
+Added Pin To Net: NetName=PC0_P_Sense03 Pin=R5-2
+Added Pin To Net: NetName=PC0_P_Sense03 Pin=U1-23
+Added Net: Name=PC0_P_Sense03
+Added Pin To Net: NetName=PC2_P_Sense01 Pin=J1-2
+Added Pin To Net: NetName=PC2_P_Sense01 Pin=R2-2
+Added Pin To Net: NetName=PC2_P_Sense01 Pin=U1-25
+Added Net: Name=PC2_P_Sense01

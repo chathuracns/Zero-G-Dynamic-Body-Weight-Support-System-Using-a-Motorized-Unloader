@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=L2 Old Footprint=INDPM5752X300N New Footprint=INDPM7366X300N
+Change Component Comment : Designator=L2 Old Comment=SRP5030CC-4R7M New Comment=SRP7028CC-4R7M
+Change component parameters: Designator = "L2" ("L2"); Footprint = "INDPM5752X300N"; UniqueID = "\NZDZIWLH" ("\NZDZIWLH")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/Product-Datasheets/SRP7028CC.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SRP7028CC-4R7M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "652-SRP7028CC-4R7M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/SRP7028CC-4R7M?qs=1Kr7Jg1SGW%252BnpjZpZxrorQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uH"; VariantName = "[No Variations]"

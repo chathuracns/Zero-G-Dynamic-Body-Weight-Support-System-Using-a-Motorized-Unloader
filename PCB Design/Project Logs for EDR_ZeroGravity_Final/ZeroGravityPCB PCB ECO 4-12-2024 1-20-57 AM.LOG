@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=Sheet1 Member=D?
+Removed Member From Class: ClassName=Sheet1 Member=R?
+Change Footprint: Footprint Not Found ECS160185PXGMTR
+Change Component Designator: OldDesignator=D1 NewDesignator=D2
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=R1 NewDesignator=R2
+Change Component Designator: OldDesignator=R2 NewDesignator=R3
+Change Component Designator: OldDesignator=R3 NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Net Name : Old Net Name=NetD?_2 New Net Name=NetD1_2
+Added Member To Class: ClassName=Sheet1 Member=Component D2 CDSU4148
+Added Member To Class: ClassName=Sheet1 Member=Component R4 RK73H2ATTED1002F

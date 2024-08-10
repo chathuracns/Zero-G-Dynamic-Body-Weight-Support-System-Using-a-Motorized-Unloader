@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=Y1 Old Footprint=ECS160185PXGMTR New Footprint=ABLS
+Change Component Comment : Designator=Y1 Old Comment=ECS-160-18-5PX-GM-TR New Comment=ABLS-16.000MHz-16-A-4-H-T
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "ECS160185PXGMTR"; UniqueID = "\THYSURLK" ("\THYSURLK")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "ABLS-16.000MHZ-16-A-4-H-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/abls-16.000mhz-16-a-4-h-t/abracon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://abracon.com/Resonators/abls.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "ABRACON"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ABLS-16.000MHz-16-A-4-H-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "815-LS16000MHZ16A4HT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ABRACON/ABLS-16.000MHZ-16-A-4-H-T?qs=vLWxofP3U2z6hhU1at4Vrw%3D%3D"; VariantName = "[No Variations]"

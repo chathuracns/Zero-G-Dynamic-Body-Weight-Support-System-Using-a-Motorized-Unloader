@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=R11 Old Footprint=FP-RCC0805-e3-MFG New Footprint=FP-RCC0805-e3-MFG
+Change Net Name : Old Net Name=NetIC2_2 New Net Name=BASE_HX

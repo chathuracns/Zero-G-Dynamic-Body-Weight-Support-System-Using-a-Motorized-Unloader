@@ -1,0 +1,5 @@
+Change Footprint: Footprint Not Found ECS160185PXGMTR
+Change Net Name : Old Net Name=NetD1_2 New Net Name=LED+
+Added Member To Class: ClassName=Sheet1 Member=Component D1 150080RS75000
+Added Member To Class: ClassName=Sheet1 Member=Component R1 RK73H2ATTD2200F
+Added Member To Class: ClassName=Sheet1 Member=Component R3 RK73H2ATTD1001D

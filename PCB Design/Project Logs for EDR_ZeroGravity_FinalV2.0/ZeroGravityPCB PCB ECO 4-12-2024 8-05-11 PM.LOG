@@ -1,0 +1,10 @@
+Added Component: Designator=R5(FP-RK73H2A-IPC_C)
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=J8-1
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=PC2_P_Sense03 Pin=J8-2
+Added Pin To Net: NetName=PC2_P_Sense03 Pin=R5-2
+Added Pin To Net: NetName=PC2_P_Sense03 Pin=U1-25
+Added Net: Name=PC2_P_Sense03
+Added Member To Class: ClassName=Sheet1 Member=Component R5 RK73H2ATTD1001D

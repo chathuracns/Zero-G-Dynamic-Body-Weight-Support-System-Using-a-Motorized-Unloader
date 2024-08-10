@@ -1,0 +1,156 @@
+Removed Pin From Net: NetName=DTR Pin=J3-1
+Removed Pin From Net: NetName=TX Pin=J3-2
+Removed Pin From Net: NetName=RX Pin=J3-3
+Removed Pin From Net: NetName=GND Pin=J3-6
+Removed Pin From Net: NetName=GND Pin=J5-1
+Removed Pin From Net: NetName=VIN Pin=J5-2
+Removed Pin From Net: NetName=VIN Pin=J6-1
+Removed Pin From Net: NetName=VIN Pin=J6-1
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=GND Pin=J6-3
+Change Footprint: Footprint Not Found 2843923
+Change Component Footprint: Designator=J1 Old Footprint=FP-440054-2-MFG New Footprint=1727010
+Change Component Footprint: Designator=J2 Old Footprint=FP-440054-2-MFG New Footprint=1727010
+Change Footprint: Footprint Not Found 2843923
+Change Footprint: Footprint Not Found 2843923
+Change Footprint: Footprint Not Found 2843923
+Change Component Comment : Designator=J5 Old Comment=440054-2 New Comment=284392-3
+Change Component Comment : Designator=J1 Old Comment=440054-2 New Comment=1727010
+Change Component Comment : Designator=J2 Old Comment=440054-2 New Comment=1727010
+Change Component Comment : Designator=J6 Old Comment=694106106102 New Comment=284392-3
+Change Component Comment : Designator=J3 Old Comment=B6B-XH-A(LF)(SN) New Comment=284392-3
+Change Component Comment : Designator=J4 Old Comment=B6B-XH-A(LF)(SN) New Comment=284392-3
+Change Component Designator: OldDesignator=C5 NewDesignator=C6
+Change Component Designator: OldDesignator=C6 NewDesignator=C5
+Change Managed Component Library Link : Designator=J1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=677B1E4F-0FD8-41C3-A800-BF1EFA9F7AE5 New ItemGUID= Old RevisionGUID=C4DDE9F9-73B4-4542-AD15-ABE3CE1491F6 New RevisionGUID=
+Change Managed Component Library Link : Designator=J2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=677B1E4F-0FD8-41C3-A800-BF1EFA9F7AE5 New ItemGUID= Old RevisionGUID=C4DDE9F9-73B4-4542-AD15-ABE3CE1491F6 New RevisionGUID=
+Change Managed Component Library Link : Designator=J5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=677B1E4F-0FD8-41C3-A800-BF1EFA9F7AE5 New ItemGUID= Old RevisionGUID=C4DDE9F9-73B4-4542-AD15-ABE3CE1491F6 New RevisionGUID=
+Change Managed Component Library Link : Designator=J6 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=5293B07B-E388-49B8-AB40-6B83C086A53B New ItemGUID= Old RevisionGUID=1F9CDD95-42DE-4CBD-A18B-31055FDB9A44 New RevisionGUID=
+Change component parameters: Designator = "J1" ("J1"); Footprint = "FP-440054-2-MFG"; UniqueID = "\CRWOKHOT" ("\CRWOKHOT")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1727010/phoenix-contact?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-2/sf-00050638.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "651-1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1727010?qs=JcjeNNoqGSMjtHhQoBJ7UA%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "FP-440054-2-MFG"; UniqueID = "\KVSRMJFU" ("\KVSRMJFU")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1727010/phoenix-contact?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-2/sf-00050638.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "651-1727010"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1727010?qs=JcjeNNoqGSMjtHhQoBJ7UA%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "JST_B6B-XH-A(LF)(SN)"; UniqueID = "\GEMCRZAB" ("\GEMCRZAB")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/284392-3/te-connectivity?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=284392-3&DocFormat=pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "12.8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "571-284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/284392-3?qs=79dOc3%2F91%2FccaCLojhwxSQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J4" ("J4"); Footprint = "JST_B6B-XH-A(LF)(SN)"; UniqueID = "\IAABYPBL" ("\IAABYPBL")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/284392-3/te-connectivity?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=284392-3&DocFormat=pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "12.8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "571-284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/284392-3?qs=79dOc3%2F91%2FccaCLojhwxSQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J5" ("J5"); Footprint = "FP-440054-2-MFG"; UniqueID = "\LRLQKJTX" ("\LRLQKJTX")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/284392-3/te-connectivity?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=284392-3&DocFormat=pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "12.8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "571-284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/284392-3?qs=79dOc3%2F91%2FccaCLojhwxSQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J6" ("J6"); Footprint = "694106106102"; UniqueID = "\IYMAXZYA" ("\IYMAXZYA")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/284392-3/te-connectivity?region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=284392-3&DocFormat=pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "12.8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "571-284392-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/284392-3?qs=79dOc3%2F91%2FccaCLojhwxSQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J7(1727010)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1727010/phoenix-contact?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-2/sf-00050638.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1727010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1727010?qs=JcjeNNoqGSMjtHhQoBJ7UA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=P1(SMTC-TSW-106-07-X-S)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.samtec.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.samtec.com/documents/webfiles/pdf/TSW_TH.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.samtec.com/documents/webfiles/cpdf/TSW-XXX-XX-XXX-X-XX-XXX-MKT.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "F-214"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through-hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = ".025[0.64] SQ. Post Terminal Strip Assembly"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TSW-106-07-X-S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "DM, 8/1988"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "TSW-106-07-L-S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Range"; Value = "-55 to 125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Coding"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=RX Pin=P1-4
+Added Pin To Net: NetName=TX Pin=P1-5
+Added Pin To Net: NetName=DTR Pin=P1-6
+Change Net Name : Old Net Name=XTAL1 New Net Name=XTLA1
+Change Net Name : Old Net Name=XTAL2 New Net Name=XTLA2
+Added Pin To Net: NetName=PB0_03_ENA- Pin=J5-1
+Added Pin To Net: NetName=PB0_03_ENA- Pin=U1-12
+Added Net: Name=PB0_03_ENA-
+Added Pin To Net: NetName=PB1_03_DIR- Pin=J5-2
+Added Pin To Net: NetName=PB1_03_DIR- Pin=U1-13
+Added Net: Name=PB1_03_DIR-
+Added Pin To Net: NetName=PB2_03_PUL- Pin=U1-14
+Added Net: Name=PB2_03_PUL-
+Added Pin To Net: NetName=PB3 Pin=J6-1
+Added Pin To Net: NetName=PB3 Pin=J6-1
+Added Pin To Net: NetName=PB3 Pin=U1-15
+Added Net: Name=PB3
+Added Pin To Net: NetName=PB4 Pin=J6-2
+Added Pin To Net: NetName=PB4 Pin=U1-16
+Added Net: Name=PB4
+Added Pin To Net: NetName=PB5 Pin=J6-3
+Added Pin To Net: NetName=PB5 Pin=U1-17
+Added Net: Name=PB5
+Added Pin To Net: NetName=PD2_01_ENA- Pin=J3-1
+Added Pin To Net: NetName=PD2_01_ENA- Pin=U1-32
+Added Net: Name=PD2_01_ENA-
+Added Pin To Net: NetName=PD3_01_DIR- Pin=J3-2
+Added Pin To Net: NetName=PD3_01_DIR- Pin=U1-1
+Added Net: Name=PD3_01_DIR-
+Added Pin To Net: NetName=PD4_01_PUL- Pin=J3-3
+Added Pin To Net: NetName=PD4_01_PUL- Pin=U1-2
+Added Net: Name=PD4_01_PUL-
+Added Pin To Net: NetName=PD5_02_ENA- Pin=J4-1
+Added Pin To Net: NetName=PD5_02_ENA- Pin=U1-9
+Added Net: Name=PD5_02_ENA-
+Added Pin To Net: NetName=PD6_02_DIR- Pin=J4-2
+Added Pin To Net: NetName=PD6_02_DIR- Pin=U1-10
+Added Net: Name=PD6_02_DIR-
+Added Pin To Net: NetName=PD7_02_PUL- Pin=J4-3
+Added Pin To Net: NetName=PD7_02_PUL- Pin=U1-11
+Added Net: Name=PD7_02_PUL-
+Added Member To Class: ClassName=Sheet1 Member=Component J7 1727010
+Added Member To Class: ClassName=Sheet1 Member=Component P1 TSW-106-07-L-S

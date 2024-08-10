@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=J6 Old Footprint=694106106102 New Footprint=694106106102
+Change Component Footprint: Designator=L1 Old Footprint=WE-GFH_3225 New Footprint=WE-GFH_3225
+Change Component Footprint: Designator=D? Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Add Pin To Net: Unknown Pin: Pin Y1-
+Change Net Name : Old Net Name=NetC7_1 New Net Name=SW
+Change Net Name : Old Net Name=NetC7_2 New Net Name=BST

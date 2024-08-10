@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=PB4_DOUT_HX Pin=U1-16
+Removed Pin From Net: NetName=PB5_PDSCK_HX Pin=U1-17
+Added Pin To Net: NetName=PB5_PDSCK_HX Pin=U1-16
+Added Pin To Net: NetName=PB4_DOUT_HX Pin=U1-17

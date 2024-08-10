@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PC2_P_Sense03 Pin=J2-1
+Removed Pin From Net: NetName=PC1_P_Sense02 Pin=J2-2
+Change Component Footprint: Designator=R11 Old Footprint=FP-RCC0805-e3-MFG New Footprint=FP-RCC0805-e3-MFG
+Change Component Footprint: Designator=L1 Old Footprint=WE-GFH_3225 New Footprint=WE-GFH_3225
+Change Component Footprint: Designator=D1 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Added Pin To Net: NetName=PC1_P_Sense02 Pin=J2-1
+Added Pin To Net: NetName=PC2_P_Sense03 Pin=J2-2

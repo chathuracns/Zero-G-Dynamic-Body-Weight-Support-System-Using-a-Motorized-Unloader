@@ -1,0 +1,13 @@
+Change Footprint: Footprint Not Found ECS160185PXGMTR
+Change Component Comment : Designator=Y1 Old Comment=830034122 New Comment=ECS-160-18-5PX-GM-TR
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "830034122"; UniqueID = "\NKTDEQNC" ("\NKTDEQNC")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.com/datasheet/2/122/csm_7x-1841291.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "ECS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ECS-160-18-5PX-GM-TR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "520-160-18-5PX-GM-TR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ECS/ECS-160-18-5PX-GM-TR?qs=amGC7iS6iy9jy4CztfLIlw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "16MHz"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=XTAL2 Pin=Y1-1

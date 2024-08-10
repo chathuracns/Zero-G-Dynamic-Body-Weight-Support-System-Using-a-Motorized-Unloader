@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=PB4_DOUT_HX Pin=U1-27
+Change Net Name : Old Net Name=PB3_Safety New Net Name=PC5_Safety
+Change Net Name : Old Net Name=PB5_PDSCK_HX New Net Name=PC3_PDSCK_HX
+Added Pin To Net: NetName=PC4_DOUT_HX Pin=U1-27
+Added Net: Name=PC4_DOUT_HX

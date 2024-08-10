@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [EDR_ZeroGravity_FinalV4.0.PrjPcb]
+   Generated File[ZeroGravityPCB.TXT]
+   Generated File[ZeroGravityPCB.LDP]
+   Generated File[ZeroGravityPCB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:30:13 PM On 4/17/2024

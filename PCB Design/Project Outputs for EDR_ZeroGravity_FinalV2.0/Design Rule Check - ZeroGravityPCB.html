@@ -1,0 +1,403 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4/16/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:16:54 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc">C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">21</td></tr>
+</table>
+</td>
+</table><a name="ID5BMRTAFA01I0GZRANSXE1K434CVVC4PDJTVZBTMXTLVGPP2IS32G"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOGIIYAEJGK5MB3AJLLMHZ2GRMO5DL2KGF4WTNMITL0ENKGEQACVJ">Clearance Constraint (Gap=0.127mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCX2UW5N4PYVHPTRFBZNASLSOLGSLKQSXNAWHWREGLJMJ5OF0SQ5M">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1DWWNH5TIM14PN4VTD2KDPMENLTF0QNOWNVOU5KB4SI32CSTVBFP">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3USNFBY4UCLFDR2EZ5XP0OXLXL2WPB2EMEINSBJFN2FKR1WPNWS">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEIZNYLMU1NKWPFZ1JBQD3EXJNMDGTA3CINQQPYOCJFCFFA30RZ2B">Width Constraint (Min=0.127mm) (Max=25.4mm) (Preferred=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ30GC4HFM2VYL2EVQGTYK3MZNBE22HIRZXHW4HOEWRQWCX5JJPXN">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (InPadClass('PowerPads'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5DUCRX3TIX0PPU2NPXR1YACE3CI35GZ2UQBCNUOS2JASGRS3HK2F">Power Plane Connect Rule(Relief Connect )(Expansion=0.3mm) (Conductor Width=0.127mm) (Air Gap=0.127mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW1SQR51ADSFBD2WQC4CPUH3OVEGHKN2VPPP0QGMH2PCMXZQPNDHE">Minimum Annular Ring (Minimum=0.076mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQ2JHYJRR1SOUIIJFEOFR5BJMAJUA3DOFNEADF3OTFBQVSO54FAJ">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ5YYMZY5R245MUUUZL2NWW2NACD0UITICBKVFSPC4IGBVKCKRDDM">Hole To Hole Clearance (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIGZGIRSEZJ3TDSSUYBZSFOO30NDVO3FLSAEPCEO2FT4UVC0VGA1I">Minimum Solder Mask Sliver (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEQDPKFJVE4BAN45MLNELGDCHXBMFGRDJJNHQ03DJWLQCRAWS2C1K">Silk To Solder Mask (Clearance=0.127mm) (IsPad),(All)</a></td>
+<td class="column2">21</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHF01DUAZ0MUJBQS40O5O5YQ3YMM1P0Y3MECVUDJOJ1T5S4E55Y5C">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2XJPVGQEZF1XKF0OHG4WTV3ASM5YCSITBMRGEWFAP04KF0LSQXMD">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDD1AG2KK3KO2VNIDTUP3LMKOZENKTV0ONH1JIG0OOA4AXW0BRVGKC">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3LXOKVYDHW3ZJRZMCDMJPAH2OJORJVVAOQQWESBOMIAX2E4IB3VP">Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">21</td>
+</tr>
+</table><br><a name="IDEQDPKFJVE4BAN45MLNELGDCHXBMFGRDJJNHQ03DJWLQCRAWS2C1K"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.127mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1909.114mil|Location2.X=1915.364mil|Location1.Y=1662.163mil|Location2.Y=1668.413mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1909.114mil|Location2.X=1915.364mil|Location1.Y=1662.163mil|Location2.Y=1668.413mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (48.783mm,42.298mm) on Bottom Overlay And Pad C12-1(47.933mm,42.298mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1914.018mil|Location2.X=1920.268mil|Location1.Y=2131.337mil|Location2.Y=2137.587mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1914.018mil|Location2.X=1920.268mil|Location1.Y=2131.337mil|Location2.Y=2137.587mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (48.908mm,54.215mm) on Bottom Overlay And Pad C14-1(48.058mm,54.215mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1947.952mil|Location2.X=1954.202mil|Location1.Y=1662.561mil|Location2.Y=1668.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1947.952mil|Location2.X=1954.202mil|Location1.Y=1662.561mil|Location2.Y=1668.811mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (49.345mm,42.308mm) on Bottom Overlay And Pad C13-1(50.195mm,42.308mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2227.309mil|Location2.X=2233.559mil|Location1.Y=1661.516mil|Location2.Y=1667.766mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2227.309mil|Location2.X=2233.559mil|Location1.Y=1661.516mil|Location2.Y=1667.766mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (56.866mm,42.282mm) on Bottom Overlay And Pad C16-1(56.016mm,42.282mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2256.981mil|Location2.X=2263.231mil|Location1.Y=2231.85mil|Location2.Y=2238.1mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2256.981mil|Location2.X=2263.231mil|Location1.Y=2231.85mil|Location2.Y=2238.1mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (57.619mm,56.768mm) on Bottom Overlay And Pad C15-1(56.769mm,56.768mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2275.33mil|Location2.X=2281.58mil|Location1.Y=1821.576mil|Location2.Y=1827.826mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2275.33mil|Location2.X=2281.58mil|Location1.Y=1821.576mil|Location2.Y=1827.826mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (57.66mm,46.347mm) on Bottom Overlay And Pad C11-1(58.51mm,46.347mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2297.735mil|Location2.X=2303.985mil|Location1.Y=1610.065mil|Location2.Y=1616.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2297.735mil|Location2.X=2303.985mil|Location1.Y=1610.065mil|Location2.Y=1616.315mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (58.654mm,40.975mm) on Top Overlay And Pad C9-1(57.804mm,40.975mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2386.482mil|Location2.X=2392.732mil|Location1.Y=1660.869mil|Location2.Y=1667.119mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2386.482mil|Location2.X=2392.732mil|Location1.Y=1660.869mil|Location2.Y=1667.119mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Arc (60.909mm,42.265mm) on Bottom Overlay And Pad C17-1(60.059mm,42.265mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2180.313mil|Location2.X=2186.563mil|Location1.Y=2262.857mil|Location2.Y=2269.107mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2180.313mil|Location2.X=2186.563mil|Location1.Y=2262.857mil|Location2.Y=2269.107mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.127mm) Between Pad C15-2(54.969mm,56.768mm) on Bottom Layer And Text "C15" (56.059mm,57.669mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1553.116mil|Location2.X=1557.45mil|Location1.Y=2445.256mil|Location2.Y=2449.589mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1553.116mil|Location2.X=1557.45mil|Location1.Y=2445.256mil|Location2.Y=2449.589mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.127mm) Between Pad D2-1(39.954mm,61.565mm) on Top Layer And Track (39.504mm,61.215mm)(39.504mm,63.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.549mil|Location2.X=1592.883mil|Location1.Y=2445.256mil|Location2.Y=2449.589mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.549mil|Location2.X=1592.883mil|Location1.Y=2445.256mil|Location2.Y=2449.589mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.127mm) Between Pad D2-1(39.954mm,61.565mm) on Top Layer And Track (40.404mm,61.565mm)(40.404mm,63.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1553.116mil|Location2.X=1557.45mil|Location1.Y=2464.941mil|Location2.Y=2469.274mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1553.116mil|Location2.X=1557.45mil|Location1.Y=2464.941mil|Location2.Y=2469.274mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.127mm) Between Pad D2-2(39.954mm,63.265mm) on Top Layer And Track (39.504mm,61.215mm)(39.504mm,63.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.549mil|Location2.X=1592.883mil|Location1.Y=2464.941mil|Location2.Y=2469.274mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.549mil|Location2.X=1592.883mil|Location1.Y=2464.941mil|Location2.Y=2469.274mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.127mm) Between Pad D2-2(39.954mm,63.265mm) on Top Layer And Track (40.404mm,61.565mm)(40.404mm,63.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.834mil|Location2.X=1820.614mil|Location1.Y=1698.705mil|Location2.Y=1706.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.834mil|Location2.X=1820.614mil|Location1.Y=1698.705mil|Location2.Y=1706.039mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.127mm) Between Pad IC1-1(45.553mm,42.871mm) on Top Layer And Track (46.152mm,43.371mm)(47.152mm,43.371mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.834mil|Location2.X=1820.559mil|Location1.Y=1594.807mil|Location2.Y=1602.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1810.834mil|Location2.X=1820.559mil|Location1.Y=1594.807mil|Location2.Y=1602.225mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.127mm) Between Pad IC1-3(45.553mm,40.971mm) on Top Layer And Track (46.152mm,40.471mm)(47.152mm,40.471mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1856.27mil|Location2.X=1866.05mil|Location1.Y=1593.723mil|Location2.Y=1601.057mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1856.27mil|Location2.X=1866.05mil|Location1.Y=1593.723mil|Location2.Y=1601.057mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.127mm) Between Pad IC1-4(47.751mm,40.971mm) on Top Layer And Track (46.152mm,40.471mm)(47.152mm,40.471mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1856.27mil|Location2.X=1865.995mil|Location1.Y=1699.789mil|Location2.Y=1707.207mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1856.27mil|Location2.X=1865.995mil|Location1.Y=1699.789mil|Location2.Y=1707.207mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.08mm &lt; 0.127mm) Between Pad IC1-6(47.751mm,42.871mm) on Top Layer And Track (46.152mm,43.371mm)(47.152mm,43.371mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.08mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2240.3mil|Location2.X=2246.55mil|Location1.Y=2035.536mil|Location2.Y=2041.786mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2240.3mil|Location2.X=2246.55mil|Location1.Y=2035.536mil|Location2.Y=2041.786mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.127mm) Between Pad Y1-1(56.058mm,52.832mm) on Top Layer And Track (56.983mm,50.432mm)(56.983mm,51.632mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2240.3mil|Location2.X=2246.55mil|Location1.Y=2118.214mil|Location2.Y=2124.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2240.3mil|Location2.X=2246.55mil|Location1.Y=2118.214mil|Location2.Y=2124.464mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.127mm) Between Pad Y1-1(56.058mm,52.832mm) on Top Layer And Track (56.983mm,54.032mm)(56.983mm,55.232mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1793.45mil|Location2.X=1799.7mil|Location1.Y=2035.536mil|Location2.Y=2041.786mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1793.45mil|Location2.X=1799.7mil|Location1.Y=2035.536mil|Location2.Y=2041.786mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.127mm) Between Pad Y1-2(46.558mm,52.832mm) on Top Layer And Track (45.633mm,50.432mm)(45.633mm,51.632mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1793.45mil|Location2.X=1799.7mil|Location1.Y=2118.214mil|Location2.Y=2124.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\EDR_ZeroGravity_FinalV2.0\ZeroGravityPCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1793.45mil|Location2.X=1799.7mil|Location1.Y=2118.214mil|Location2.Y=2124.464mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.1mm &lt; 0.127mm) Between Pad Y1-2(46.558mm,52.832mm) on Top Layer And Track (45.633mm,54.032mm)(45.633mm,55.232mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
