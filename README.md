@@ -97,14 +97,7 @@ The code includes debug output via USART. You can monitor this output to see rea
 
 Use this information to help with tuning and troubleshooting.
 
-## Future Improvements
 
-Potential areas for future development include:
-
-1. Implementing a user interface for easy control and monitoring
-2. Adding limit switches or other safety features
-3. Incorporating different lifting modes or profiles
-4. Implementing wireless control or monitoring capabilities
 
 ## Contributing
 
